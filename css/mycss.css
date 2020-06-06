@@ -1,0 +1,235 @@
+/*scrollbar set*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: dimgray;
+}
+
+body{
+  background-image: url("../img/background/background-temp.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-black{
+  background-color: rgba(0,0,0,0.9);
+}
+
+.navbar{
+  display: none;
+}
+
+.nav-link{
+  font-size: 1.2em;
+}
+
+nav img{
+  height: 5vh;
+}
+
+/*profile control*/
+#profile{
+  clear: both;
+}
+
+#board{
+  background-color: rgba(0,0,0,0.9);
+  width: 100%;
+  top: 0;
+}
+
+#profile img{
+  display:block;
+  margin:auto;
+  max-width: 100%;
+}
+
+#profile .list-group{
+  display: block;
+}
+
+#profile .list-group-item{
+  background-color: rgba(0,0,0,0);
+}
+
+#profile #flag{
+  float: left;
+}
+
+#self_introduction_footer{
+  display: none;
+}
+
+/*skill contral*/
+.wrap{
+  display:table;
+}
+
+.table-cell{
+  display:table-cell;
+  vertical-align:middle;
+}
+
+#skill_list{
+  background-color: rgba(0,0,0,0.9);
+  width: 100%;
+  top:calc(0% + 12vh);
+}
+
+#skill_list .card-body{
+  background-color: rgba(200,200,200,0.7);
+}
+
+/*skill level*/
+#bar-skill-html{
+  width: 90%;
+}
+
+#bar-skill-css{
+  width: 80%;
+}
+
+#bar-skill-js{
+  width: 85%;
+}
+
+#bar-skill-jq{
+  width: 80%;
+}
+
+#bar-skill-bs{
+  width: 90%;
+}
+
+#bar-skill-php{
+  width: 95%;
+}
+
+#bar-skill-laravel{
+  width: 90%;
+}
+
+#bar-skill-mysql{
+  width: 95%;
+}
+
+
+/*project control*/
+#page_project{
+  margin-bottom: 12vh;
+}
+
+#project_list{
+  background-color: rgba(0,0,0,0.9);
+  width: 100%;
+  top:calc(0% + 12vh);
+}
+
+#project_list .nav-item .active{
+  background: rgba(200,200,200,0.5);
+  border: none;
+}
+
+#project_list .nav-tabs{
+  border-color: rgba(200,200,200,0.5);
+}
+
+#project_list .nav-link:hover{
+  border-color: rgba(200,200,200,0.5);
+}
+
+#project_list .nav-item{
+  max-width: 50%;
+}
+
+.project-profile{
+  max-width: 80%;
+  display:block;
+  margin: 10% auto;
+}
+
+.project-introduce{
+  margin: 8% 0;
+}
+
+.project-image{
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.image-project{
+  width: 22%;
+  margin-right: 10%;
+}
+
+/*footer*/
+.btn-floating img{
+  height: 3vh;
+}
+
+
+/*bar animate*/
+@keyframes animate-bar {
+  from {width: 0%;}
+}
+
+@media screen and (min-width: 768px) {
+  .page{
+    height: 100vh;
+  }
+
+  #top_logo_area{
+    display: none;
+  }
+
+  .navbar{
+    float:left;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+  }
+
+  /*profile control*/
+  #board{
+    top:calc(0% + 12vh);
+  }
+
+  #self_introduction{
+    display: none;
+  }
+
+  #self_introduction_footer{
+    display: block;
+  }
+
+  /*project control*/
+  #project_list{
+    top:calc(0% + 4vh);
+  }
+
+  #project_list .nav-item{
+    max-width:25%;
+  }
+
+  .project-profile{
+    margin: 50% auto;
+  }
+}
