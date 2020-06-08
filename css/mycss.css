@@ -82,6 +82,14 @@ nav img{
   display:table;
 }
 
+.progress{
+  height: 2em;
+}
+
+.skill_logo{
+  height: 4em;
+}
+
 .table-cell{
   display:table-cell;
   vertical-align:middle;
