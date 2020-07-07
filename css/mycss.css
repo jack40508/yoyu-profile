@@ -138,6 +138,14 @@ nav img{
   width: 95%;
 }
 
+#bar-skill-ps{
+  width: 60%;
+}
+
+#bar-skill-ai{
+  width: 50%;
+}
+
 
 /*project control*/
 #page_project{
@@ -167,14 +175,19 @@ nav img{
   max-width: 50%;
 }
 
+.project-skill{
+  background-color: rgba(200,200,200,0.7);
+}
+
+.project_skill_logo{
+  height: 6em;
+  padding: 1em;
+}
+
 .project-profile{
   max-width: 80%;
   display:block;
   margin: 10% auto;
-}
-
-.project-introduce{
-  margin: 8% 0;
 }
 
 .project-image{
@@ -217,7 +230,7 @@ nav img{
 
   /*profile control*/
   #board{
-    top:calc(0% + 12vh);
+    top:calc(0% + 8vh);
   }
 
   #self_introduction{
@@ -238,6 +251,6 @@ nav img{
   }
 
   .project-profile{
-    margin: 50% auto;
+    margin: 20% auto;
   }
 }

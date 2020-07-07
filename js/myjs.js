@@ -66,22 +66,24 @@ $(window).scroll(function(){
   skill[5] = document.getElementById("bar-skill-php");
   skill[6] = document.getElementById("bar-skill-laravel");
   skill[7] = document.getElementById("bar-skill-mysql");
+  skill[8] = document.getElementById("bar-skill-ps");
+  skill[9] = document.getElementById("bar-skill-ai");
 
   //if(up to dwon or down to up)
   if($(window).scrollTop()+$(window).height() >= page_skill.offsetTop+body.offsetTop && $(window).scrollTop() < page_skill.offsetTop+page_skill.offsetHeight){
-    for(i=0;i<8;i++){
+    for(i=0;i<10;i++){
       animate_bar(skill[i]);
     }
   }
   else{
-    for(i=0;i<8;i++){
+    for(i=0;i<10;i++){
       animate_bar_clear(skill[i]);
     }
   }
 
   /*Nav li active listen*/
 
-  if($(window).scrollTop()+$(window).height() > page_skill.offsetTop && $(window).scrollTop() < page_skill.offsetTop+page_skill.offsetHeight){
+  if($(window).scrollTop()+$(window).height()/2 > page_skill.offsetTop && $(window).scrollTop()+$(window).height()/2 <= page_skill.offsetTop+page_skill.offsetHeight){
     if(!$("#nav_link_skill").hasClass("active")){
               $("nav .active").removeClass("active");
               $("#nav_link_skill").addClass("active");
@@ -90,7 +92,7 @@ $(window).scroll(function(){
         return false;//this prevents flicker
     }
   }
-  else if($(window).scrollTop()+$(window).height() > page_project.offsetTop && $(window).scrollTop() < page_project.offsetTop+page_project.offsetHeight) {
+  else if($(window).scrollTop()+$(window).height()/2 > page_project.offsetTop && $(window).scrollTop()+$(window).height()/2 <= page_project.offsetTop+page_project.offsetHeight) {
     if(!$("#nav_link_project").hasClass("active")){
               $("nav .active").removeClass("active");
               $("#nav_link_project").addClass("active");
